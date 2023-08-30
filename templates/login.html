@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>login</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script type="text/javascript" src="static/js/login.js"></script>
+    <link rel="icon" href="static/img/title.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+  </head>
+
+  <body>
+    <form id="login_form">
+      <h1>Login</h1>
+      <div>
+        <p id="login_status" style="display: none">Message</p>
+      </div>
+      <div class="from-row">
+        <label for="Username">Username:</label>
+        <input type="text" size="20" id="username" name="Username" autofocus />
+      </div>
+
+      <div class="form-row">
+        <label for="Password">Password :</label>
+        <input type="password" id="password" name="Password"/>
+        <div><input type="checkbox" id="display_pw_chkbox" />Show Password</div>
+      </div>
+
+      <div class="form-row">
+        <button id="login_btn" type="button">Login</button>
+      </div>
+    </form>
+  </body>
+</html>

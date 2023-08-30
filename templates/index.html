@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title></title>
+    <link rel="icon" href="static/img/title.png" type="image/png" />
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+    <script type="text/javascript" src="static/js/main.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <select class="list-box" id="lefthand_listbox" size="10" multiple="">
+        <!-- <option value="1">xxx</option> -->
+      </select>
+      <div class="main-btn">
+        <button id="move_right_btn" type="button">>></button>
+        <button id="move_left_btn" type="button"><<</button>
+        <button id="move_all_right_btn" type="button">>> Move all</button>
+        <button id="move_all_left_btn" type="button"><< Move all</button>
+        <button id="show_staion_btn" type="button">show location on map</button>
+      </div>
+      <select class="list-box" id="righthand_listbox" size="10" multiple="">
+        <!-- <option value="1">xxx</option> -->
+      </select>
+    </div>
+    <table id="station_tab">
+      <thead>
+        <tr>
+          <th>Station_Id</th>
+          <th>Station_Name</th>
+          <th>S_Lat</th>
+          <th>S_Lon</th>
+        </tr>
+      </thead>
+      <tbody id="station_tbody"></tbody>
+    </table>
+    <div id="map" visibility="hidden">
+        <!-- # Google Maps for free -->
+        <!-- <iframe src="https://maps.google.com/maps?q=13.677004758076443, 100.60349091049797&z=15&output=embed" width="450" height="270" frameborder="0" style="border:0"></iframe> -->
+    </div>
+  </body>
+</html>
